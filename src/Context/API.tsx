@@ -23,6 +23,7 @@ export let ApiProvider = ({ children }: any) => {
   }, [axios]);
 
   const handleSearch = (input: any) => {
+    setSearchValue();
     axios
       .get(`${API_SEARCH_URL}${input}`)
       .then((res: any) => {
