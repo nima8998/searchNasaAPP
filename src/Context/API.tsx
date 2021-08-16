@@ -32,12 +32,14 @@ export let ApiProvider = ({ children }: any) => {
       .catch((err: any) => console.log('Error API_SEARCH_URL', err));
   };
 
-  const handleClear = () =>{
+  const handleClear = () => {
     setSearchValue();
-  }
+  };
 
   return (
-    <ApiContext.Provider value={{ nasaPic, handleSearch, searchValue, handleClear }}>
+    <ApiContext.Provider
+      value={{ nasaPic, handleSearch, searchValue, handleClear }}
+    >
       {children}
     </ApiContext.Provider>
   );

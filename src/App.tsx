@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import HomeContainer from './Container/HomeContainer';
 import SearchDetailContainer from './Container/SearchDetailContainer';
 import { ApiProvider } from './Context/API';
@@ -10,12 +10,12 @@ function App() {
   return (
     <ApiProvider>
       <div className="App">
-        <HashRouter basename='/'>
+        <HashRouter basename="/">
           <Switch>
-            <Route path='/:nasaIdParam'>
-              <SearchDetailContainer/>
+            <Route path="/:nasaIdParam">
+              <SearchDetailContainer />
             </Route>
-            <Route path='/'>
+            <Route path="/">
               <HomeContainer />
             </Route>
           </Switch>

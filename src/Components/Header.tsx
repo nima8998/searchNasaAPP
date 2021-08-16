@@ -6,7 +6,10 @@ export default function Header({ props }: any) {
     <Container style={{ backgroundImage: `url(${props.hdurl})` }}>
       <h1>Astronomy Picture of the Day:</h1>
       <p>
-        Copyright: <span className="header_copyright">{props.copyright} ({props.date})</span>
+        Copyright:{' '}
+        <span className="header_copyright">
+          {props.copyright} ({props.date})
+        </span>
       </p>
       <i className="header_explanation">{props.explanation}</i>
     </Container>

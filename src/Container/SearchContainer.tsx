@@ -22,7 +22,9 @@ export default function SearchContainer() {
         <input onChange={handleValue} type="text" placeholder="Moon" required />
         <div>
           <button type="submit">Search</button>
-          <button type="reset" className='clear' onClick={handleClear}>Clear</button>
+          <button type="reset" className="clear" onClick={handleClear}>
+            Clear
+          </button>
         </div>
       </form>
       {searchValue ? (
@@ -53,11 +55,11 @@ const Container = styled.section`
       padding: 15px;
       border-radius: 5px;
     }
-    div{
+    div {
       display: flex;
       justify-content: center;
       gap: 1em;
-      .clear{
+      .clear {
         color: #fb3737;
       }
       button {
@@ -71,7 +73,7 @@ const Container = styled.section`
         cursor: pointer;
         font-weight: 600;
         text-transform: uppercase;
-        &:hover{
+        &:hover {
           background-color: #c7c7c7;
         }
       }
