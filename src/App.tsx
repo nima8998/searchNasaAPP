@@ -9,12 +9,12 @@ import Footer from './Components/Footer';
 const routes = [
   {
     path: '/:nasaIdParam',
-    exact: false,
+    exact: true,
     component: () => <SearchDetailContainer />
   },
   {
     path: '/',
-    exact: false,
+    exact: true,
     component: () => <HomeContainer />
   }
 ];
