@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export default function Header({ props }: any) {
   return (
     <Container style={{ backgroundImage: `url(${props.hdurl})` }}>
+      <h1>Astronomy Picture of the Day:</h1>
       <p>
         Copyright: <span className="header_copyright">{props.copyright} ({props.date})</span>
       </p>
