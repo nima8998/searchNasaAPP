@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.4a136287.chunk.css",
-    "main.js": "./static/js/main.98b421bd.chunk.js",
-    "main.js.map": "./static/js/main.98b421bd.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.2e829ec5.js",
-    "runtime-main.js.map": "./static/js/runtime-main.2e829ec5.js.map",
-    "static/js/2.5d5b975d.chunk.js": "./static/js/2.5d5b975d.chunk.js",
-    "static/js/2.5d5b975d.chunk.js.map": "./static/js/2.5d5b975d.chunk.js.map",
-    "static/js/3.b9e8e62b.chunk.js": "./static/js/3.b9e8e62b.chunk.js",
-    "static/js/3.b9e8e62b.chunk.js.map": "./static/js/3.b9e8e62b.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.4a136287.chunk.css.map": "./static/css/main.4a136287.chunk.css.map",
-    "static/js/2.5d5b975d.chunk.js.LICENSE.txt": "./static/js/2.5d5b975d.chunk.js.LICENSE.txt",
-    "static/media/noImage.236e0a1a.png": "./static/media/noImage.236e0a1a.png"
+    "main.css": "/searchNasaAPP/static/css/main.4a136287.chunk.css",
+    "main.js": "/searchNasaAPP/static/js/main.98b421bd.chunk.js",
+    "main.js.map": "/searchNasaAPP/static/js/main.98b421bd.chunk.js.map",
+    "runtime-main.js": "/searchNasaAPP/static/js/runtime-main.b95e35b7.js",
+    "runtime-main.js.map": "/searchNasaAPP/static/js/runtime-main.b95e35b7.js.map",
+    "static/js/2.c94d09cd.chunk.js": "/searchNasaAPP/static/js/2.c94d09cd.chunk.js",
+    "static/js/2.c94d09cd.chunk.js.map": "/searchNasaAPP/static/js/2.c94d09cd.chunk.js.map",
+    "static/js/3.b9e8e62b.chunk.js": "/searchNasaAPP/static/js/3.b9e8e62b.chunk.js",
+    "static/js/3.b9e8e62b.chunk.js.map": "/searchNasaAPP/static/js/3.b9e8e62b.chunk.js.map",
+    "index.html": "/searchNasaAPP/index.html",
+    "static/css/main.4a136287.chunk.css.map": "/searchNasaAPP/static/css/main.4a136287.chunk.css.map",
+    "static/js/2.c94d09cd.chunk.js.LICENSE.txt": "/searchNasaAPP/static/js/2.c94d09cd.chunk.js.LICENSE.txt",
+    "static/media/noImage.236e0a1a.png": "/searchNasaAPP/static/media/noImage.236e0a1a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2e829ec5.js",
-    "static/js/2.5d5b975d.chunk.js",
+    "static/js/runtime-main.b95e35b7.js",
+    "static/js/2.c94d09cd.chunk.js",
     "static/css/main.4a136287.chunk.css",
     "static/js/main.98b421bd.chunk.js"
   ]
