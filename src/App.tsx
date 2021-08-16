@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch, HashRouter } from 'react-router-dom';
 import HomeContainer from './Container/HomeContainer';
 import SearchDetailContainer from './Container/SearchDetailContainer';
 import { ApiProvider } from './Context/API';
@@ -23,7 +23,7 @@ function App() {
   return (
     <ApiProvider>
       <div className="App">
-        <Router>
+        <HashRouter basename='/'>
           <Switch>
             {routes.map((route, index) => (
               <Route
@@ -35,7 +35,7 @@ function App() {
             ))}
           </Switch>
           <Footer />
-        </Router>
+        </HashRouter>
       </div>
     </ApiProvider>
   );

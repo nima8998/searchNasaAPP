@@ -10,7 +10,7 @@ export default function SearchDetail({ props, images, video }: any) {
       </div>
       <div className="details">
         <h5>
-          Photographer:{' '}
+          Photographer:
           <span className="important">
             {props.photographer}
             {props.secondary_creator}

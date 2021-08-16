@@ -4,7 +4,7 @@ import Search from '../Components/Search';
 import { useApiContext } from '../Context/API';
 
 export default function SearchContainer() {
-  let { handleSearch, searchValue }: any = useApiContext();
+  let { handleSearch, searchValue, handleClear }: any = useApiContext();
   let [search, setSearch]: any = useState<String>();
 
   const handleValue = (event: any) => {
@@ -20,7 +20,10 @@ export default function SearchContainer() {
     <Container>
       <form onSubmit={handleSubmit}>
         <input onChange={handleValue} type="text" placeholder="Moon" required />
-        <button type="submit">Search</button>
+        <div>
+          <button type="submit">Search</button>
+          <button type="reset" className='clear' onClick={handleClear}>Clear</button>
+        </div>
       </form>
       {searchValue ? (
         <Search props={searchValue.data.collection.items} />
@@ -50,15 +53,28 @@ const Container = styled.section`
       padding: 15px;
       border-radius: 5px;
     }
-    button {
-      padding: 10px 20px;
-      border-radius: 5px;
-      outline: none;
-      border: none;
-      background-color: #dadada;
-      font-size: 16px;
-      letter-spacing: 2px;
-      cursor: pointer;
+    div{
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      .clear{
+        color: #fb3737;
+      }
+      button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background-color: #dadada;
+        font-size: 14px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-weight: 600;
+        text-transform: uppercase;
+        &:hover{
+          background-color: #c7c7c7;
+        }
+      }
     }
   }
 `;

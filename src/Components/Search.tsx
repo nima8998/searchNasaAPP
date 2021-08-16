@@ -10,7 +10,7 @@ export default function Search({ props }: any) {
         <h1>Cargando...</h1>
       ) : (
         props.map((i: any, idx: number) => (
-          <Link data-aos='fade-up'  key={idx} to={i.data[0].nasa_id}>
+          <Link replace data-aos='fade-up'  key={idx} to={i.data[0].nasa_id}>
             <SearchItem props={i} />
           </Link>
         ))

@@ -7,7 +7,7 @@ export let ApiProvider = ({ children }: any) => {
   const axios = require('axios');
   const API_SEARCH_URL = 'https://images-api.nasa.gov/search?q=';
   const API_APOD_URL = 'https://api.nasa.gov/planetary/apod';
-  const API_KEY = '?api_key=UDoPSOaEJpDJuiY3QFkzHjXxqTsONewGfDQwpCMV';
+  const API_KEY = '?api_key=1Mvfb1zgc1HqrIe0skLQcd81uTFs3ei5qejUarGU';
   const [nasaPic, setNasaPic]: any = useState();
   const [searchValue, setSearchValue]: any = useState<Array<{}>>();
 
@@ -31,8 +31,12 @@ export let ApiProvider = ({ children }: any) => {
       .catch((err: any) => console.log('Error API_SEARCH_URL', err));
   };
 
+  const handleClear = () =>{
+    setSearchValue();
+  }
+
   return (
-    <ApiContext.Provider value={{ nasaPic, handleSearch, searchValue }}>
+    <ApiContext.Provider value={{ nasaPic, handleSearch, searchValue, handleClear }}>
       {children}
     </ApiContext.Provider>
   );
