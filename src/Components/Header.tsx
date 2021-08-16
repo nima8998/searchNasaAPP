@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default function Header({ props }: any) {
   return (
-    <Container style={{ backgroundImage: `url(${props.hdurl})` }}>
+    <Container style={{ backgroundImage: `url(${props.hdurl})`}}>
       <h1>Astronomy Picture of the Day:</h1>
       <p>
         Copyright:{' '}
@@ -45,5 +45,12 @@ const Container = styled.header`
     background-color: #13131396;
     padding: 15px;
     border-radius: 15px;
+  }
+  
+  @media only screen and (max-width: 576px){
+    .header_explanation{
+      width: 75%;
+      background-color: #13131367;
+    }
   }
 `;
