@@ -6,33 +6,18 @@ import { ApiProvider } from './Context/API';
 import './App.css';
 import Footer from './Components/Footer';
 
-const routes = [
-  {
-    path: '/:nasaIdParam',
-    exact: true,
-    component: () => <SearchDetailContainer />
-  },
-  {
-    path: '/',
-    exact: true,
-    component: () => <HomeContainer />
-  }
-];
-
 function App() {
   return (
     <ApiProvider>
       <div className="App">
         <HashRouter basename='/'>
           <Switch>
-            {routes.map((route, index) => (
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                children={<route.component />}
-              />
-            ))}
+            <Route path='/:nasaIdParam'>
+              <SearchDetailContainer/>
+            </Route>
+            <Route path='/'>
+              <HomeContainer />
+            </Route>
           </Switch>
           <Footer />
         </HashRouter>
