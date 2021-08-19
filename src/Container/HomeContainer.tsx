@@ -9,13 +9,7 @@ export default function HomeContainer() {
   let { nasaPic }: any = useApiContext();
 
   return (
-    <Container
-      style={{
-        backgroundImage: `url(${
-          nasaPic === undefined ? '' : nasaPic.data.hdurl
-        })`
-      }}
-    >
+    <Container>
       {nasaPic === undefined ? <Loader /> : <Header props={nasaPic.data} />}
       <SearchContainer />
     </Container>
@@ -25,7 +19,5 @@ export default function HomeContainer() {
 const Container = styled.section`
   position: relative;
   min-height: 250vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #eaeded;
 `;

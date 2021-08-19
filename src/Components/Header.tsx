@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default function Header({ props }: any) {
   return (
-    <Container style={{ backgroundImage: `url(${props.hdurl})`}}>
+    <Container style={{ backgroundImage: `url(${props.hdurl})` }}>
       <h1>Astronomy Picture of the Day:</h1>
       <p>
         Copyright:{' '}
@@ -30,6 +30,13 @@ const Container = styled.header`
   padding: 15px;
   gap: 2em;
 
+  h1,
+  p {
+    background-color: #131313e1;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
   .header_copyright {
     font-size: 22px;
     font-weight: 600;
@@ -46,9 +53,9 @@ const Container = styled.header`
     padding: 15px;
     border-radius: 15px;
   }
-  
-  @media only screen and (max-width: 576px){
-    .header_explanation{
+
+  @media only screen and (max-width: 576px) {
+    .header_explanation {
       width: 75%;
       background-color: #13131367;
     }

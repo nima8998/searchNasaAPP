@@ -24,13 +24,13 @@ export default function Search({ props }: any) {
 
   // change page
 
-  const paginate = (pageNumber:any) =>{
-    setCurrentPage(pageNumber)
-  }
+  const paginate = (pageNumber: any) => {
+    setCurrentPage(pageNumber);
+  };
 
   return (
     <Container>
-      <div className="results" id='search'>
+      <div className="results" id="search">
         {props === undefined ? (
           <h1>Cargando...</h1>
         ) : (

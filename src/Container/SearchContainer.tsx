@@ -54,6 +54,7 @@ const Container = styled.section`
       transition: all 250;
       padding: 15px;
       border-radius: 5px;
+      background-color: #eaeded;
     }
     div {
       display: flex;

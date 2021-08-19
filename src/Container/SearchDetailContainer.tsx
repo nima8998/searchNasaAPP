@@ -10,6 +10,7 @@ export default function SearchDetailContainer() {
   let [images, setImages]: any = useState<Array<String>>([]);
   let [article, setArticle]: any = useState();
   let [video, setVideo]: any = useState();
+  console.log(article);
 
   useEffect(() => {
     axios
